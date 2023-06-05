@@ -38,7 +38,7 @@ if sen:
         x_final = np.pad(x, ((0, 0), (0, extra_features)), mode='constant')
 
     output = model.predict(x_final)
-    df = pd.read_csv("E:\Projects\Emojiprediction/Mapping.csv")
+    df = pd.read_csv("Emojiprediction/Mapping.csv")
     map = dict(zip(df["number"],df["emoticons"]))
 
     st.write(map[output[0]])
