@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import streamlit as st
 
-with open("E:\Projects\Emojiprediction/model.pkl","rb") as file:
+with open("Emojiprediction/model.pkl","rb") as file:
     model = pickle.load(file)
 
 #nltk.download(stopwords)
